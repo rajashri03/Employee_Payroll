@@ -1,0 +1,17 @@
+<div class="container"  ng-controller="EmploginCtrl">
+    <div class="signin">
+        <h1>Sign In</h1>
+    </div>
+    <div class="formgroup">
+        <input type="text" ng-model="email"  class="formcontrol" placeholder="Enter Email">
+    </div>
+    <div class="formgroup">
+        <input type="password" ng-model="password" class="formcontrol" placeholder="Enter Password">
+    </div>
+    <div class="createaccount">
+        <div><a href="#!register" style="text-decoration:none"> <button>Signup</button></a></div>
+        <div>
+            <button ng-click="login(email,password)">Login</button>
+        </div>
+    </div>
+</div>

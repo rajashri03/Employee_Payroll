@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div ng-init="displayData()" class="allemp">
+    <div>
+        <div><h1>All Employees</h1></div>
+        <div><button class="add">Add Employees</button></div>
+    </div>
+    <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Designation</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tr ng-repeat="emp in allemp">
+          <td>{{emp.firstName}}</td>
+          <td>{{emp.lastName}}</td>
+          <td>{{emp.email}}</td>
+          <td>{{emp.designation}}</td>
+          <td><i class="fa fa-edit"></i></td>
+          <td><i class="fa fa-trash"></i></td>
+        </tr>
+       
+       
+      </table>
+</div>

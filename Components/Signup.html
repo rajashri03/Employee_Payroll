@@ -1,0 +1,25 @@
+<div class="container"  ng-controller="EmpRegCtrl">
+    <div class="signin">
+        <h1>Sign Up</h1>
+        {{message}}
+    </div>
+    <div class="formgroup">
+        <input type="text" ng-model="firstName"  class="formcontrol" placeholder="Enter Firstname">
+    </div>
+    <div class="formgroup">
+        <input type="text" ng-model="lastName" class="formcontrol" placeholder="Enter Lastname">
+    </div>
+    <div class="formgroup">
+        <input type="text" ng-model="email"  class="formcontrol" placeholder="Enter Email">
+    </div>
+    <div class="formgroup">
+        <input type="password" ng-model="password" class="formcontrol" placeholder="Enter Password">
+    </div>
+    <div class="formgroup">
+        <input type="text" ng-model="designation" class="formcontrol" placeholder="Enter Designation">
+    </div>
+    <div class="createaccount">
+        <div><button ng-click="InsertEmp(firstName,lastName,email,password,designation)">Register</button></div>
+        <div><a href="#!login" style="text-decoration:none"> <button>Login</button></a></div>
+    </div>
+</div>
