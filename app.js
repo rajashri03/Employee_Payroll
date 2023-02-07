@@ -1,4 +1,4 @@
-var app=angular.module("EmployeePayroll",['ngRoute','ngStorage']);
+var app=angular.module("EmployeePayroll",['ngRoute','ngStorage','ngTouch','ngAnimate','ui.bootstrap']);
 
 app.config(["$routeProvider",function($routeProvider){
     

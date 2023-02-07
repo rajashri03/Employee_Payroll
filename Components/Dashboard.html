@@ -2,8 +2,10 @@
 <div ng-init="displayData()" class="allemp">
     <div>
         <div><h1>All Employees</h1></div>
-        <div><button class="add">Add Employees</button></div>
+        <div><button class="add" ng-click="openModal()">Add Employees</button>
+          <button class="add" value="Export to Excel" id="btnexport" ng-click="exportData()" ><i class="fa fa-file"></i> Export</button></div>
     </div>
+    <div  id="export">
     <table>
         <tr>
           <th>First Name</th>
@@ -18,10 +20,9 @@
           <td>{{emp.lastName}}</td>
           <td>{{emp.email}}</td>
           <td>{{emp.designation}}</td>
-          <td><i class="fa fa-edit"></i></td>
-          <td><i class="fa fa-trash"></i></td>
+          <td><i class="fa fa-edit" ng-click="editmodal(emp.id,emp.firstName,emp.lastName,emp.email,emp.password,emp.designation)"></i></td>
+          <td><i class="fa fa-trash" ng-click="DeleteEmp(emp.id)"></i></td>
         </tr>
-       
-       
       </table>
+    </div>
 </div>

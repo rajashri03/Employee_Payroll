@@ -1,0 +1,28 @@
+<div class="modal-header" >
+    <h3 class="modal-title" id="modal-title">Edit Emp</h3>
+   </div>
+   <div class="modal-body" id="modal-body">
+    <input type="hidden" placeholder="Title" ng-model="id"/>
+    <div >
+            <div class="formgroup">
+                <input type="text" ng-model="firstName"  class="formcontrol" >
+            </div>
+            <div class="formgroup">
+                <input type="text" ng-model="lastName" class="formcontrol" placeholder="Enter Lastname">
+            </div>
+            <div class="formgroup">
+                <input type="text" ng-model="email"  class="formcontrol" placeholder="Enter Email">
+            </div>
+            <div class="formgroup">
+                <input type="password" ng-model="password" class="formcontrol" placeholder="Enter Password">
+            </div>
+            <div class="formgroup">
+                <input type="text" ng-model="designation" class="formcontrol" placeholder="Enter Designation">
+            </div>
+    </div>
+   </div>
+   <div class="modal-footer" style="background: #eee;">
+    <button class="btn " type="button" ng-click="cancelModal()">Cancel</button>
+    <button class="btn" type="button" ng-controller="EmpDashCtrl" ng-click="EditEmp(id,firstName,lastName,email,password,designation)">Ok</button>
+ 
+</div>
